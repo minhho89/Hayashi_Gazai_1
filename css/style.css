@@ -1,0 +1,86 @@
+:root {
+    --green: rgb(21,196,142);
+    --gold: rgb(134,130,21);
+}
+
+html {
+    margin-bottom: 0px;
+}
+.navbar-hayashi {
+    color: var(--gold);
+    background-color: var(--green);
+}
+
+.navbar-hayashi a {
+    color: var(--gold);
+}
+
+.carousel-caption-hys {
+    position: absolute;
+    top: 40%;
+    width: 100%;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+    text-align: center;
+    background-color: var(--yellow);
+   
+}
+
+.display-1-hys {
+    font-size: 5rem;
+    font-weight: 400;
+    line-height: 1.2;
+    color: rgba(0, 0, 0, 0/0);
+}
+
+.display-4-hys {
+    font-size: 3.5rem;
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+.container {
+    margin-bottom: 0;
+}
+
+
+  
+@media only screen and (min-width: 320px){
+    .carousel-caption-hys {
+        top: 30%;
+    }
+    .display-1-hys {
+        font-size: 2rem;
+        font-weight: 300;
+        line-height: 1.2;
+    }
+    .display-4-hys {
+        font-size: 1rem;
+    }
+  }
+  
+  @media only screen and (min-width: 480px){
+    .display-1-hys {
+        font-size: 3rem;
+    }
+    .display-4-hys {
+        font-size: 2.5rem;
+    }
+  }
+  
+  @media only screen and (min-width: 768px){
+    .display-1-hys {
+        font-size: 4rem;
+    }
+  }
+
+  @media only screen and (min-width: 1024px){
+    .display-1-hys {
+        font-size: 5rem;
+    }
+    .display-4-hys {
+        font-size: 4rem;
+    }
+  }
