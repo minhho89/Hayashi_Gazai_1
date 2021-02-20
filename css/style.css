@@ -1,6 +1,7 @@
 :root {
-    --green: rgb(21,196,142);
-    --gold: rgb(134,130,21);
+    --green: #15C48E;
+    --gold: #878214;
+    --yellow:#F2EE8E;
 }
 
 html {
@@ -13,6 +14,27 @@ html {
 
 .navbar-hayashi a {
     color: var(--gold);
+}
+
+.navbar-toggler-icon-hys {
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    vertical-align: middle;
+    content: "";
+    background: no-repeat center center;
+    background-size: 100% 100%;
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(134,130,21, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.navbar-toggler-hys {
+    border-color: var(--gold);
+    color: var(--gold);
+    background-color: var(--green);
+}
+
+.bg-clr-yellow {
+    background-color: var(--yellow);
 }
 
 .carousel-caption-hys {
@@ -45,8 +67,23 @@ html {
     margin-bottom: 0;
 }
 
+.card-hys {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    /* -ms-flex-direction: column; */
+    /* flex-direction: column; */
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+}
 
-  
 @media only screen and (min-width: 320px){
     .carousel-caption-hys {
         top: 30%;
@@ -59,6 +96,17 @@ html {
     .display-4-hys {
         font-size: 1rem;
     }
+    .card-hys {
+        /* position: relative; */
+        /* display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex; */
+        /* -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column; */
+        flex-direction: column;
+       
+    }
   }
   
   @media only screen and (min-width: 480px){
@@ -68,12 +116,19 @@ html {
     .display-4-hys {
         font-size: 2.5rem;
     }
+    .card-hys {
+        flex-direction: row;
+  }
+
   }
   
   @media only screen and (min-width: 768px){
     .display-1-hys {
         font-size: 4rem;
     }
+    .card-hys {
+        flex-direction: row;
+  }
   }
 
   @media only screen and (min-width: 1024px){
@@ -82,5 +137,8 @@ html {
     }
     .display-4-hys {
         font-size: 4rem;
+    }
+    .card-hys {
+          flex-direction: row;
     }
   }
